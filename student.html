@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Career Mentoring</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #2c044e;
+            color: white;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #3b0268;
+            padding: 20px;
+        }
+
+        header .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        header nav a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: white;
+            font-weight: 500;
+        }
+
+        .container {
+            display: flex;
+        }
+
+        .sidebar {
+            width: 250px;
+            background-color: #3b0268;
+            padding: 20px;
+        }
+
+        .sidebar ul {
+            list-style: none;
+        }
+
+        .sidebar ul li {
+            margin: 20px 0;
+        }
+
+        .sidebar ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .content {
+            flex-grow: 1;
+            padding: 40px;
+        }
+
+        .dashboard-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 20px;
+        }
+
+        .dashboard-item {
+            background-color: #4e0a84;
+            padding: 20px;
+            text-align: center;
+            border-radius: 10px;
+        }
+
+        .dashboard-item img {
+            max-width: 100px;
+        }
+
+        footer {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            background-color: #3b0268;
+            margin-top: 40px;
+        }
+
+        footer a {
+            text-decoration: none;
+            color: white;
+        }
+
+        footer .social-icons img {
+            width: 30px;
+            margin: 0 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">CAREER MENTORING</div>
+        <nav>
+            <a href="#">HOME</a>
+            <a href="#">About Us</a>
+            <a href="#">Dashboard</a>
+            <a href="#">Contact Us</a>
+        </nav>
+        <div class="profile">
+            <span>Student</span>
+            <img src="pro.png" width="30" height="40">
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="sidebar">
+            <ul>
+                <li><a href="#">View Portfolio</a></li>
+                <li><a href="#">Profile Settings</a></li>
+                <li><a href="#">Account Settings</a></li>
+                <li><a href="#">Sign Out</a></li>
+            </ul>
+        </div>
+
+        <div class="content">
+            <div class="dashboard-grid">
+                <div class="dashboard-item">
+                    <img src="pic2.jpg" alt="Courses">
+                    <h3>Courses</h3>
+                </div>
+                <div class="dashboard-item">
+                    <img src="4630062.jpg" alt="Progress">
+                    <h3>Progress</h3>
+                </div>
+                <div class="dashboard-item">
+                    <img src="badge.png" alt="Upcoming Tasks">
+                    <h3>Upcoming Tasks</h3>
+                </div>
+                <div class="dashboard-item">
+                    <img src="feedback.png" alt="Recent Feedback">
+                    <h3>Recent Feedback</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="social-icons">
+            <a href="#"><img src="2227.jpg" alt="Instagram"></a>
+            <a href="#"><img src="gmail.png" alt="Gmail"></a>
+            <a href="#"><img src="linkedin (1).png" alt="LinkedIn"></a>
+        </div>
+        <div class="policies">
+            <a href="#">Terms Of Use</a> | 
+            <a href="#">Privacy Policy</a> | 
+            <a href="#">Brand Policy</a> | 
+            <a href="#">Copyright Policy</a>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login - Career Mentoring</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            background-color: #1C0A3D;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            background-color: #2B1055;
+            width: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-right: 20px;
+            font-weight: 500;
+        }
+
+        .login-container {
+            display: flex;
+            justify-content: space-around;
+            width: 80%;
+            margin-top: 100px;
+        }
+
+        .login-box {
+            background-color: white;
+            border-radius: 15px;
+            padding: 40px 30px;
+            width: 40%;
+            color: black;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .login-box h2 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .login-box label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: 500;
+        }
+
+        .login-box input {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            border: 1px solid #ccc;
+            background-color: #E5E4F7;
+            outline: none;
+        }
+
+        .login-box button {
+            width: 100%;
+            padding: 12px;
+            background-color: #2B1055;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .login-box button:hover {
+            background-color: #4D30C9;
+        }
+
+        .new-user {
+            text-align: center;
+            margin-top: 15px;
+        }
+
+        .new-user a {
+            color: #4D30C9;
+            text-decoration: none;
+        }
+
+        .footer {
+            background-color: #1C0A3D;
+            padding: 20px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .footer a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">
+            <h2>CAREER MENTORING</h2>
+        </div>
+        <div class="nav-links">
+            <a href="#">Home</a>
+            <a href="#">About Us</a>
+            <a href="#">Contact Us</a>
+            <a href="#">Login</a>
+        </div>
+    </nav>
+
+    <div class="login-container">
+        <!-- Mentor Login Box -->
+        <div class="login-box">
+            <h2>MENTOR LOGIN</h2>
+            <form>
+                <label for="mentor-email">Email</label>
+                <input type="email" id="mentor-email" placeholder="Enter your email" required>
+
+                <label for="mentor-password">Password</label>
+                <input type="password" id="mentor-password" placeholder="Enter your password" required>
+
+                <button type="submit">Login</button>
+            </form>
+            <div class="new-user">
+                <p>New User? <a href="#">Sign up</a></p>
+            </div>
+        </div>
+
+        <!-- Student Login Box -->
+        <div class="login-box">
+            <h2>STUDENT LOGIN</h2>
+            <form>
+                <label for="student-email">Email</label>
+                <input type="email" id="student-email" placeholder="Enter your email" required>
+
+                <label for="student-password">Password</label>
+                <input type="password" id="student-password" placeholder="Enter your password" required>
+
+                <button type="submit">Login</button>
+                <a href="student.html">submit</a>
+            </form>
+            <div class="new-user">
+                <p>New User? <a href="#">Sign up</a></p>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <a href="#">Terms Of Use</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Brand Policy</a>
+        <a href="#">Copyright Policy</a>
+    </footer>
+
+</body>
+</html>
